@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta name="viewport" content="with=device-width" scale="1.0">
+        <title>Tiwalade Iyunade Ltd.</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <section class="header"> 
+            <nav>
+                <!-- <a href="index.html"><img src="images/logo.png"></a> -->
+                <a href="index.html"><img src="{% static 'images/logo.png' %}"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"> </i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li> 
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+<div class="text-box">
+    <h1> Tiwalade Iyunade</h1>
+    <p> You don't have to go to a university to be an engineer, you can just learn the trade<br> by watching youtube</p>
+    <a href=""class="hero-btn">Visit us to know</a>
+</div>
+        </section>
+
+ <!-- services -->
+ <section class="services">
+     <h1> Services we offer</h1>
+     <p>We are the best at what we do</p>
+
+     <div class="row">
+        <div class="services-col">
+            <h3>services 1</h3>
+            <p>We are simply the best , beleive it</p>
+        </div>
+        <div class="services-col">
+            <h3>services 2</h3>
+            <p>We are simply the best , beleive it</p>
+        </div>
+        <div class="services-col">
+            <h3>services 3</h3>
+            <p>We are simply the best , beleive it</p>
+        </div>
+     </div>
+</section >
+
+<!-- ...offices.. -->
+<section class="offices">
+    <h1>Our Global office</h1>
+    <p>We are simply the best , beleive it</p>
+
+    <div class="row">
+        <div class="offices-col">
+            <img src="{% static 'images/london.png' %}">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="offices-col">
+            <img src="{% static 'images/newyork.png' %}">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="offices-col">
+            <img src="{% static 'images/washington.png' %}">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ....Testimonials..... -->
+<section class="testimonials">
+    <h1> What our clients says :</h1>
+    <div class="row">
+        <div class="testimonials-col">
+            <img src="{% static 'images/user1.jpg' %}">
+                <div>
+                    <p>You suck man</p>
+                    <h3>Kolly-B</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+        </div>
+        <div class="testimonials-col">
+            <img src="{% static 'images/user2.jpg' %}">
+            <div>
+                <p>You suck man</p>
+                <h3>Kolly-B</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>  
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are your engineers</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+    <div class="last">
+        <a href="https://twitter.com/KoladeBadmus"><p>Made with <i class="fa fa-heart-o"></i> by a bored Kolade</p></a>
+    </div>
+
+</section>
+
+<!-- JavaScript for Toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+        
+    }
+</script>
+    </body> 
+</hmtl>
